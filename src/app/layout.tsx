@@ -30,11 +30,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > <div>
+      > <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
         <NavBar/>
         {children}
-        </div>
-        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+       
+        <footer className="row-start-3 flex gap-[24px] p-8 flex-wrap items-center justify-center">
           <a className="flex items-center gap-2 hover:underline hover:underline-offset-4"href="mailto:isaiahnikologonzales@outlook.com"
             target="_blank" rel="noopener noreferrer">
               <IconMailbox/>
@@ -48,6 +48,7 @@ export default function RootLayout({
               <IconBrandGithubFilled/>
           </a>
         </footer>
+         </div>
       </body>
     </html>
   );
