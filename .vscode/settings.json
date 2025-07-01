@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "page content"
+        "page content",
+        "navigation"
     ]
 }
