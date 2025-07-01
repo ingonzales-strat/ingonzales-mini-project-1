@@ -1,11 +1,29 @@
+import { Button } from "@/components/ui/button"
+import { IconBrandGithub,IconBrandLinkedin, IconMailbox } from "@tabler/icons-react"
+
+
+
+
 export default function ContactMePage() {
   return <div><h1><center>I&apos;d love to hear from you!</center></h1>
     <h2><center>You can reach me via...</center></h2>
-    <center>
-    <ul>
-        <li><a href="mailto:isaiahnikologonzales@outlook.com" target="_blank" rel="noopener noreferrer">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/inikologon/" target="_blank"rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://github.com/Koniiro" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    </ul>
-    </center></div>
+    <div className="flex flex-wrap justify-center gap-2 md:flex-row">
+    <a href="mailto:isaiahnikologonzales@outlook.com">
+      <Button variant="outline" size="sm" >
+      <IconMailbox/> EMail
+      </Button>
+    </a>
+    <a href="https://www.linkedin.com/in/inikologon/" target="_blank"rel="noopener noreferrer">
+      <Button variant="outline" size="sm">
+        <IconBrandLinkedin /> LinkedIn
+      </Button>
+    </a>
+    <a href="https://github.com/Koniiro" target="_blank" rel="noopener noreferrer">
+      <Button variant="outline" size="sm">
+        <IconBrandGithub /> GitHub
+      </Button>
+    </a>
+   </div>
+    
+   </div>
 }
