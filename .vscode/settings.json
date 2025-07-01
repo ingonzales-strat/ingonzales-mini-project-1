@@ -1,7 +1,6 @@
 {
     "conventionalCommits.scopes": [
         "page content",
-        "navigation",
-        "ui adjustment"
+        "navigation"
     ]
 }
