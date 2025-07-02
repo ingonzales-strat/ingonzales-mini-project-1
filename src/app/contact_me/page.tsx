@@ -22,13 +22,13 @@ export default function ContactMePage() {
 
   <div className="flex flex-wrap justify-center gap-2 md:flex-row">
     <a href="https://www.linkedin.com/in/inikologon/" target="_blank" rel="noopener noreferrer">
-      <Button variant="outline" size="sm" className="hover:bg-blue-500">
-        <IconBrandLinkedin /> LinkedIn
+      <Button variant="outline" size="lg" className="relative overflow-hidden text-white before:bg-blue-500 before:absolute before:inset-0 hover:text-white transition-colors before:translate-y-[100%] hover:before:translate-y-0 before:transition-transform">
+        <span className="relative z-10 items-center gap-2 flex"><IconBrandLinkedin /> LinkedIn</span>
       </Button>
     </a>
     <a href="https://github.com/Koniiro" target="_blank" rel="noopener noreferrer">
-      <Button variant="outline" size="sm" className="hover:bg-blue-500">
-        <IconBrandGithub /> GitHub
+      <Button variant="outline" size="lg" className="relative overflow-hidden text-white before:bg-blue-500 before:absolute before:inset-0 hover:text-white transition-colors before:translate-y-[100%] hover:before:translate-y-0 before:transition-transform">
+        <span className="relative z-10  items-center gap-2 flex text-1xl"><IconBrandGithub /> GitHub</span>
       </Button>
     </a>
   </div>
