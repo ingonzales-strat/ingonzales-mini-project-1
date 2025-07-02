@@ -5,18 +5,18 @@ export default function MyFooter() {
           <a className="group flex items-center gap-2 "href="mailto:isaiahnikologonzales@outlook.com"
             target="_blank" rel="noopener noreferrer">
               <IconMailFilled className="group-hover:hidden"/>
-              <IconMail stroke={1.75} className="hidden group-hover:scale-125 group-hover:inline  transition-transform group-hover"/>
+              <IconMail stroke={1.75} className="hidden text-blue-400 group-hover:scale-125 group-hover:inline  transition-transform group-hover"/>
 
           </a>
           <a className="group flex items-center gap-2 "href="https://www.linkedin.com/in/inikologon/"
             target="_blank" rel="noopener noreferrer">
               <IconBrandLinkedinFilled className="group-hover:hidden"/>
-              <IconBrandLinkedin stroke={1.75} className="hidden group-hover:scale-125 group-hover:inline  transition-transform group-hover"/>
+              <IconBrandLinkedin stroke={1.75} className="hidden text-blue-400 group-hover:scale-125 group-hover:inline  transition-transform group-hover"/>
           </a>
           <a className="group flex items-center gap-2 "href="https://github.com/Koniiro"
             target="_blank" rel="noopener noreferrer">
               <IconBrandGithubFilled  className="group-hover:hidden"/>
-              <IconBrandGithub stroke={1.75} className="hidden group-hover:scale-125 group-hover:inline  transition-transform group-hover"/>
+              <IconBrandGithub stroke={1.75} className="hidden text-blue-400 group-hover:scale-125 group-hover:inline transition-transform group-hover"/>
 
               
           </a>

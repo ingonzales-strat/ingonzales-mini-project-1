@@ -11,7 +11,7 @@ export default function Home() {
     <div className="grid grid-cols-2 gap-4 items-center justify-items-center  p-8  sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <div className="col-span-1 ">
           <h1 className="font-bold text-6xl">Hi you!</h1>
-          <h1 className="font-bold text-8xl">I&apos;m Niko</h1>
+          <h1 className="font-bold text-8xl">I&apos;m <span className="text-blue-500">Niko</span></h1>
           <AdjustedTypeWriter/>
           <Clock/>
           
@@ -29,7 +29,7 @@ export default function Home() {
           <a href='/contact_me' >
             <Button
               variant="outline"
-              className="relative overflow-hidden text-white before:bg-white before:absolute before:inset-0 hover:text-black transition-colors before:translate-y-[100%] hover:before:translate-y-0 before:transition-transform"
+              className="relative overflow-hidden text-white before:bg-blue-500 before:absolute before:inset-0 hover:text-white transition-colors before:translate-y-[100%] hover:before:translate-y-0 before:transition-transform"
             >
                <span className="relative z-10">Wanna Chat?  |˶˙ᵕ˙ )ﾉﾞ</span>
             </Button>
