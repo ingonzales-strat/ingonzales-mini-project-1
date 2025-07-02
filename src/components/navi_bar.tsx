@@ -13,7 +13,7 @@ export default function NavBar() {
 }
 
 function MenuItem({name, href}: { name: string; href: string }){
-    return <div><p className=" relative group inline-block pr-0.5 pl-0.5">
+    return <div><p className=" relative group inline-block px-0.5">
       <Link href={href} className='relative z-10 group-hover:text-black transition-colors' >{name}</Link>
       <span className="absolute rounded-t-lg px-2 left-0 -bottom-0 w-full h-0.5 bg-blue-500 -z-10 group-hover:h-full group-hover:transition-all"></span>
       </p>
