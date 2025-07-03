@@ -1,5 +1,5 @@
 import WipeUpLink from '@/components/wipeUpLink';
-
+import {personal_proj, academic_proj} from '@/content/projects'
 
 export default function MyProjectPage() {
   return <div className=" p-8  sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -10,22 +10,23 @@ export default function MyProjectPage() {
           <WipeUpLink href='/contact_me' text='Wanna chat about what I&apos;ve worked on?'/>
         </div>
         <div className='py-5'>
-          <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Peronal Projects</h2>
-          <ul className='list-disc pl-4 py-2'> 
-            <li>Nosi Balasi</li>  
-            <li>Space Intern - NASA Spaceapps 2021</li>     
-            <li>Limi Reflection App - Blue Room Studios</li>
-            <li>Subeo QR - Google Playground by DSC Loyola</li>  
-            <li>Sabaybayin a Baybayin mobile learning app</li>
-          </ul>
+          <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Personal Projects</h2>
+          {personal_proj.map((project) => (
+            <div key={project.slug} className='py-2'>
+               <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
+            </div>
+          ))}
+        
         </div>
         <div>
           <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Academic Projects</h2>
-          <ul className='list-disc pl-4 py-2'>        
-              <li>Machine Learning and Computational Modeling for Predicting the Deformation of Natural Fiber-Reinforced Polymer Composites in Bulletproof Material Prototyping </li>
-              <li>Simulating P Systems with Complex Objects for Image Skeletonization</li>
-              <li>Cubimon: A Smart Public Hygiene Cubicle</li>
-          </ul>
+          {academic_proj.map((project) => (
+            
+            <div key={project.slug} className='py-2'>
+               <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
+            </div>
+          ))}
+         
         </div>
  
     </div>
