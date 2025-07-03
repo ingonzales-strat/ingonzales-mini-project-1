@@ -19,7 +19,7 @@ export default function AboutMePage() {
         </div>
       </div>
     </div>
-      <div><h1 className="text-4xl font-bold ">Beyond the Screen</h1>
+      <div><h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Beyond the Screen</h2>
       <p className="text-1xl font-medium">Coding and working on projects does takes its toll.</p>
         <div className='py-2 pr-100'><p>I spend some of my days poking at the code of a project I&apos;m 
           currently working on, figuring out why my ML model is overfitting, 
