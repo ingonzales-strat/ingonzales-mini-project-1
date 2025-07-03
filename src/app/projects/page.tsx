@@ -1,16 +1,23 @@
 import WipeUpLink from '@/components/wipeUpLink';
 import {personal_proj, academic_proj} from '@/content/projects'
 
+
+
+
 export default function MyProjectPage() {
-  return <div className=" p-8  sm:p-20 font-[family-name:var(--font-geist-sans)]">
+  return <div className=" grid p-8 gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
        <div>
+          
           <h1 className="text-7xl font-bold ">My <span className="text-blue-500">Projects</span></h1>
           <h1 className="text-3xl font-semibold">Here are some projects I have worked on</h1>
           <p>I&apos;m kinda proud of them since I added them here so feel free to check them out!</p>
-          <WipeUpLink href='/contact_me' text='Wanna chat about what I&apos;ve worked on?'/>
+          <div className='py-4'>
+            <WipeUpLink href='/contact_me' text='Wanna chat about what I&apos;ve worked on?'/>
+          </div>
+          
         </div>
-        <div className='py-5'>
-          <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Personal Projects</h2>
+        <div className=''>
+          <h2 className="text-4xl font-bold text-blue-300">Personal Projects</h2>
           {personal_proj.map((project) => (
             <div key={project.slug} className='py-2'>
                <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
@@ -19,7 +26,7 @@ export default function MyProjectPage() {
         
         </div>
         <div>
-          <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Academic Projects</h2>
+          <h2 className="text-4xl font-bold  text-blue-300">Academic Projects</h2>
           {academic_proj.map((project) => (
             
             <div key={project.slug} className='py-2'>
