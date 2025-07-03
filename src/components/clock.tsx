@@ -2,15 +2,20 @@
 import { useEffect, useState } from "react";
 
 export default function Clock() {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date()); 
-    }, 1000);
+    const updateTime = () => setTime(new Date());
+    updateTime(); // set it immediately
+    const interval = setInterval(updateTime, 1000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
+
+  if (!time) {
+    return <div className="text-2xl font-mono text-white">Loading...</div>;
+  }
+
 
   const formattedTime = time.toLocaleTimeString(); // "2:45:12 PM"
 
