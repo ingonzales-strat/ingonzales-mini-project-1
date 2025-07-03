@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import WipeUpLink from '@/components/wipeUpLink';
 
 
 export default function MyProjectPage() {
@@ -7,12 +7,7 @@ export default function MyProjectPage() {
           <h1 className="text-7xl font-bold ">My <span className="text-blue-500">Projects</span></h1>
           <h1 className="text-3xl font-semibold">Here are some projects I have worked on</h1>
           <p>I&apos;m kinda proud of them since I added them here so feel free to check them out!</p>
-          <div className='py-5'>
-            <p className="px-0.5  relative group inline-block">
-            <Link href="/contact_me" className='relative z-10 text-white group-hover:text-black transition-colors'>Wanna chat about what I&apos;ve worked on?</Link>
-            <span className="absolute px-2 left-0 -bottom-0 w-full h-0.5 bg-blue-500 -z-10 group-hover:h-full group-hover:transition-all"></span>
-            </p>
-          </div>
+          <WipeUpLink href='/contact_me' text='Wanna chat about what I&apos;ve worked on?'/>
         </div>
         <div className='py-5'>
           <h2 className="text-4xl font-bold underline decoration-1 underline-offset-8">Peronal Projects</h2>
