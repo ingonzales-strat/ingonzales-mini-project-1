@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { IconBrandGithub,IconBrandLinkedin } from "@tabler/icons-react"
-
+import { WipeUpLinkExt } from "@/components/wipeUpLink"
 
 
 
@@ -11,11 +11,8 @@ export default function ContactMePage() {
     <h2 className="font-medium text-2xl">You can reach me at...</h2>
     <ul>
       <li>
-        <div><p className="text-lg px-0.5  relative group inline-block">
-      <a href="mailto:isaiahnikologonzales@outlook.com" className='relative z-10 group-hover:text-black transition-colors'>isaiahnikologonzales@outlook.com</a>
-      <span className="absolute px-2 left-0 -bottom-0 w-full h-0.5 bg-blue-500 -z-10 group-hover:h-full group-hover:transition-all"></span>
-      </p>
-      </div>
+        <WipeUpLinkExt href="mailto:isaiahnikologonzales@outlook.com" text="isaiahnikologonzales@outlook.com"/>
+        
       </li>
     </ul>
   </div>
