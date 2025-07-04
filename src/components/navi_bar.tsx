@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="flex gap-6  p-5 text-white ">
       <MenuItem name='Home' href='/'/>
       <MenuItem name='About Me' href='/about_me'/>
-      <MenuItem name='My Projects' href='/projects'/>
+      
       <MenuItem name='My Gallery' href='/gallery'/>
       <MenuItem name='Contact Me' href='/contact_me'/>
     </nav>
