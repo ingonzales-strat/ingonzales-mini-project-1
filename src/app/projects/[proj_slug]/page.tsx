@@ -32,8 +32,8 @@ export default async function projectdetailspage({
     const relatedLinks=project.relevantLinks
 
 
-    return <div className="  p-8  sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <div className='grid  grid-row-4  gap-4 items-start'>
+    return <div className=" sm:px-20 sm:pt-10 font-[family-name:var(--font-geist-sans)]">
+        <div className='grid  grid-row-4  gap-6 items-start'>
             <div>
                 <Link href="/projects"><IconXboxX stroke={1.75}className='scale-225 ml-3 mb-5'/></Link>
                 <h1 className="text-7xl font-bold py-2 ">My <span className="text-blue-500">Project</span></h1>
@@ -73,5 +73,6 @@ export default async function projectdetailspage({
             
             
         </div>
+        <div></div>
     </div>
 }

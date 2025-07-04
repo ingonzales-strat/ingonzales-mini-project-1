@@ -7,8 +7,8 @@ import { WipeUpLinkExt } from "@/components/wipeUpLink"
 export default function ContactMePage() {
   return <div className="grid  items-center justify-items-center p-8  sm:p-20 font-[family-name:var(--font-geist-sans)]">
   <div className=" flex flex-col items-center text-center space-y-2">
-    <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl" >Wanna chat?</h1>
-    <h2 className="font-medium text-xl sm:text-2xl md:text-3xl md:text-4xl">You can reach me at...</h2>
+    <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl" >Wanna <span className="text-blue-500">chat?</span></h1>
+    <h2 className="font-medium text-xl sm:text-2xl md:text-3xl ">You can reach me at...</h2>
     <ul>
       <li>
         <div className="text-lg md:text-2xl">

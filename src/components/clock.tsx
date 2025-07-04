@@ -20,7 +20,7 @@ export default function Clock() {
   const formattedTime = time.toLocaleTimeString(); // "2:45:12 PM"
 
   return (
-    <div className="text-2xl font-mono text-white">
+    <div className="md:text-xl lg:text-2xl font-mono text-white">
       {formattedTime} PST
     </div>
   );
