@@ -33,8 +33,8 @@ export default function AboutMePage() {
       </div>
       <ScrollButton href='#grass'/>
     </div>
-    <div>
-      <h2 id='grass' className="text-5xl font-bold text-blue-300">Beyond the Screen ෴෴</h2>
+    <div id='grass' className='pt-5'>
+      <h2  className="text-5xl font-bold text-blue-300">Beyond the Screen ෴෴</h2>
       <p className="text-2xl font-medium">Coding and working on projects does takes its toll.</p>
         <div className='py-2 '><p>So I do try to spend my time doing other fun things both with my laptop and outside of it. To touch grass or so ෴෴ꉂꉂ(ᵔᗜᵔ*)</p>
           <p className='py-5 font-bold'>When I&apos;m negotiating with my laptop&apos; machine spirit I like to: </p>
