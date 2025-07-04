@@ -2,9 +2,9 @@ import WipeUpLink from '@/components/wipeUpLink';
 import Image from 'next/image';
 import ScrollButton from '@/components/scroll_button';
 export default function AboutMePage() {
-  return <div className="flex flex-col sm:p-20 font-[family-name:var(--font-geist-sans)] gap-20">
+  return <div className="flex flex-col p-10 sm:p-20 font-[family-name:var(--font-geist-sans)] gap-20">
     <div className='flex flex-col gap-20 items-center'>
-      <div className='grid grid-cols-[60%_40%] place-items-center'>
+      <div className=' flex flex-col gap-10 md:grid md:grid-cols-[60%_40%] place-items-center'>
         <div>
           <h1 className="text-7xl font-bold ">About <span className="text-blue-500">Me</span></h1>
           <h2 className="text-xl py-5 font-bold">Hi! I&apos;m Isaiah Nikolo Gonzales, but call me <span className="text-blue-500 font-semibold">Niko</span> |˶˙ᵕ˙ )ﾉﾞ</h2>
@@ -20,7 +20,7 @@ export default function AboutMePage() {
             <WipeUpLink href='/projects' text='Wanna check out what I&apos;ve worked on?'/>
           </div>
         </div>
-        
+      
         <div className='relative w-full max-w-sm aspect-square '>
           <Image
           src="/display_pic.jpg" alt="Picture of Niko" layout='fill'
