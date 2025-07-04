@@ -8,7 +8,7 @@ export default function MyProjectPage() {
   return <div className=" grid p-8 gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
        <div>
           
-          <h1 className="text-7xl font-bold ">My <span className="text-blue-500">Projects</span></h1>
+          <h1 className="text-5xl md:text-7xl font-bold ">My <span className="text-blue-500">Projects</span></h1>
           <h1 className="text-2xl font-semibold">Here are some things I have worked on</h1>
           <p>I&apos;m kinda proud of them since I added them here so feel free to check them out!</p>
           <div className='py-4'>
@@ -16,24 +16,27 @@ export default function MyProjectPage() {
           </div>
           
         </div>
-        <div className=''>
-          <h2 className="text-4xl font-bold text-blue-300">Personal Projects</h2>
-          {personal_proj.map((project) => (
-            <div key={project.slug} className='py-2'>
-               <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
-            </div>
-          ))}
-        
-        </div>
-        <div>
-          <h2 className="text-4xl font-bold  text-blue-300">Academic Projects</h2>
-          {academic_proj.map((project) => (
-            
-            <div key={project.slug} className='py-2'>
-               <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
-            </div>
-          ))}
-         
+        <div className='flex flex-col md:grid md:grid-cols-2 gap-8'>
+          <div className=''>
+            <h2 className="text-4xl font-bold text-blue-300">Personal Projects</h2>
+            {personal_proj.map((project) => (
+              <div key={project.slug} className='py-2'>
+                <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
+              </div>
+            ))}
+          
+          </div>
+          <div>
+            <h2 className="text-4xl font-bold  text-blue-300">Academic Projects</h2>
+            {academic_proj.map((project) => (
+              
+              <div key={project.slug} className='py-2'>
+                <WipeUpLink href={`/projects/${project.slug}`} text={project.name}/>
+              </div>
+            ))}
+          
+          </div>
+
         </div>
  
     </div>

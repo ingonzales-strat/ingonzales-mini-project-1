@@ -6,7 +6,7 @@ export default function AboutMePage() {
     <div className='flex flex-col gap-20 items-center'>
       <div className=' flex flex-col gap-10 md:grid md:grid-cols-[60%_40%] place-items-center'>
         <div>
-          <h1 className="text-7xl font-bold ">About <span className="text-blue-500">Me</span></h1>
+          <h1 className="text-5xl md:text-7xl font-bold ">About <span className="text-blue-500">Me</span></h1>
           <h2 className="text-xl py-5 font-bold">Hi! I&apos;m Isaiah Nikolo Gonzales, but call me <span className="text-blue-500 font-semibold">Niko</span> |˶˙ᵕ˙ )ﾉﾞ</h2>
           <div className='text-justify'>
             <p>I am currently a <span className="text-blue-500 font-medium">graduating BS Computer Science Student from UP Diliman. </span> 
