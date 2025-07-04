@@ -2,9 +2,7 @@ import AdjustedTypeWriter from "@/components/typewriter";
 import { Button } from "@/components/ui/button"
 import Clock from "@/components/clock";
 
-export function ButtonOutline() {
-  return <Button variant="outline">Outline</Button>
-}
+
 
 export default function Home() {
   return (
