@@ -9,7 +9,7 @@ export default function MyProjectPage() {
        <div>
           
           <h1 className="text-7xl font-bold ">My <span className="text-blue-500">Projects</span></h1>
-          <h1 className="text-3xl font-semibold">Here are some projects I have worked on</h1>
+          <h1 className="text-2xl font-semibold">Here are some things I have worked on</h1>
           <p>I&apos;m kinda proud of them since I added them here so feel free to check them out!</p>
           <div className='py-4'>
             <WipeUpLink href='/contact_me' text='Wanna chat about what I&apos;ve worked on?'/>
