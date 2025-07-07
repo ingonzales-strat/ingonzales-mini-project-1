@@ -25,7 +25,8 @@ export default function AboutMePage() {
           <Image
           src="/display_pic.jpg" alt="Picture of Niko" layout='fill'
           objectFit="cover" objectPosition="left"
-          className="z-20 "/>
+          className="z-20 "
+          loading="eager"/>
           <div className="absolute top-5 left-10 w-full h-full bg-blue-500 z-10 " />
         
         </div> 
@@ -35,9 +36,9 @@ export default function AboutMePage() {
     </div>
     <div id='grass' className='pt-5'>
       <h2  className="text-5xl font-bold text-blue-300">Beyond the Screen ෴෴</h2>
-      <p className="text-2xl font-medium">Coding and working on projects does takes its toll.</p>
+      <p className="text-2xl font-medium">Coding and the other tasks involved in projects does takes its toll.</p>
         <div className='py-2 '><p>So I do try to spend my time doing other fun things both with my laptop and outside of it. To touch grass or so ෴෴ꉂꉂ(ᵔᗜᵔ*)</p>
-          <p className='py-5 font-bold'>When I&apos;m negotiating with my laptop&apos; machine spirit I like to: </p>
+          <p className='py-5 font-bold'>When I&apos;m not negotiating with my laptop&apos;s machine spirit I like to: </p>
           <ul className='list-disc pl-4'>
             <li> <span className='font-bold  text-blue-500'>Play videogames:</span> My current obsession is Zenless Zone Zero [  wooo Anby ₍₍⚞(˶˃ ᵕ ˂˶)⚟⁾⁾  ]</li>
             <li> <span className='font-bold  text-blue-500'>Drawing:</span> Check out my gallery! I post some of my drawings there</li>
